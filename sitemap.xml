@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hashimy.github.dev/blog/blog_post_1/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hashimy.github.dev/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hashimy.github.dev/tags/machine-learning/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hashimy.github.dev/blog/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hashimy.github.dev/tags/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hashimy.github.dev/categories/</loc>
+  </url><url>
+    <loc>https://hashimy.github.dev/contact/</loc>
+  </url><url>
+    <loc>https://hashimy.github.dev/tags/index/</loc>
+  </url>
+</urlset>
