@@ -16,7 +16,7 @@ The formula used to adjust the function's parameter is as follows:
 
 $$w = w - \eta \grad f(w)$$
 
-Where $f(w)$ is our loss function, and $w$ is our varied parameter. More than one parameter can be varied by changing $w$ to be a vector, or in more complex systems, representative of a matrix. 
+Where \(f(w)\) is our loss function, and \(w\) is our varied parameter. More than one parameter can be varied by changing \(w\) to be a vector, or in more complex systems, representative of a matrix. (Please appreciate the 3 hours it took me to get this damn latex working please thank you)
 
 An important idea to keep in mind when talking about it's application in this case is that machine learning entirely works around tensor operations. This means that our loss function is, in affect, nothing more than a very long list of numbers. So, when we talk about the step, we just mean the difference between them. For example, (talk about a simple linear regression, with some example numbers ok)
 
