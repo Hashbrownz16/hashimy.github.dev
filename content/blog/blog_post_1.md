@@ -14,7 +14,7 @@ Stochastic gradient descent is an algorithm used to optimise a function's parame
 
 The formula used to adjust the function's parameter is as follows: 
 
-$w = w - \eta \grad f(w)$
+$$w = w - \eta \grad f(w)$$
 
 Where $f(w)$ is our loss function, and $w$ is our varied parameter. More than one parameter can be varied by changing $w$ to be a vector, or in more complex systems, representative of a matrix. 
 
