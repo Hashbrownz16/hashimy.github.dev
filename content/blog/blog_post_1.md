@@ -12,7 +12,11 @@ In the 2nd chapter of the course, the main objective is to write a program which
 
 Stochastic gradient descent is an algorithm used to optimise a function's parameters by iterating through the function and then adjusting the parameters inserted to the function based off the gradients calculated by the loss function. In the case of the machine learning algorithm provided, the gradients for each "step" of parameter are calculated and stored within the loss function. 
 
-The formula used to adjust the function's parameter is as follows: (insert latex statement here)
+The formula used to adjust the function's parameter is as follows: 
+
+$w = w - \eta \grad f(w)$
+
+Where $f(w)$ is our loss function, and $w$ is our varied parameter. More than one parameter can be varied by changing $w$ to be a vector, or in more complex systems, representative of a matrix. 
 
 An important idea to keep in mind when talking about it's application in this case is that machine learning entirely works around tensor operations. This means that our loss function is, in affect, nothing more than a very long list of numbers. So, when we talk about the step, we just mean the difference between them. For example, (talk about a simple linear regression, with some example numbers ok)
 
