@@ -14,18 +14,17 @@ First off, you need a band matrix. A band matrix is a matrix which contains excl
 
 An example of how a band matrix may look:
 
-$$ \begin{bmatrix} 1 & 0 & 0 & 0 \\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1  \end{bmatrix}$$
+$$ \begin{bmatrix} 1 & 0 & 0 & 1 \\\ 0 & 1 & 1 & 0 \\\ 0 & 1 & 1 & 0 \\\ 1 & 0 & 0 & 1  \end{bmatrix}$$
 
+[comment]: # (Be careful to use 3 backslashes, as MD uses \\ to denote a change in font spacing.)
+
+Here, there are multiple diagonals which exist in the matrix layout; the diagonal going from top left to bottom right, and the diagonal from top right to bottom left. Each of these diagonals contain exclusively non-zero information, forming "bands" containing information regarding the system (i.e. boundary conditions for us to exploit!)
 
 Your band matrix is going to be placed in to an equation of the form:
 
 $$ Ax = b $$ (A standard eigenvalue equation!)
 
 Here, your band matrix is represented by A, and x and b represent two arrays of values. The variables x and b represent the next set of values to be obtained (what we're solving for) and the current set of values we have (on first iteration, the starting value for each point in the co-ordinate space defined). If you're familiar with solving eigenvalue equations, the concept is the same. Using the LAPACKE package, we can invert matrices easily, and can hence use the package to solve the eigenvalue equation. 
-
-
-
-
 
 If we think of a matrix as merely a transformation being performed on a co-ordinate system, then we can see that the band matrix is a representation of the time-evolution of the system with respect to the boundary conditions placed on to it. (Have I got this the wrong way around? If it was the right way around, we wouldn't have to solve the eigenvalue equation. )
 
