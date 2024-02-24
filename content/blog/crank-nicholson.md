@@ -14,7 +14,7 @@ First off, you need a band matrix. A band matrix is a matrix which contains excl
 
 An example of how a band matrix may look:
 
-$$ \begin{bmatrix} 1 & 0 & 0  \\\ 0 & 1 & 0 \\\ 0 & 0 & 1 \end{bmatrix}$$
+$$ \begin{bmatrix} 1 & 0 & 0 & 0 \\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1  \end{bmatrix}$$
 
 
 Your band matrix is going to be placed in to an equation of the form:
