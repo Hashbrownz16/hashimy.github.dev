@@ -12,11 +12,18 @@ The majority of this module revolved around mastering the solving of differentia
 
 First off, you need a band matrix. A band matrix is a matrix which contains exclusively non-zero information about the diagonal points, and has information relating to boundary conditions of your equations at all points for which i =/= j.  Your band matrix is going to contain all the information about your system's boundary conditions, so the way you set this up is the key to solving your problem. 
 
+An example of how a band matrix may look:
+
+$$ \begin{matrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{matrix}$$
+
+
 Your band matrix is going to be placed in to an equation of the form:
 
 $$ Ax = b $$ (A standard eigenvalue equation!)
 
-Here, your band matrix is represented by A, and x and b represent two arrays of values. The variables x and b represent the next set of values to be obtained (what we're solving for) and the current set of values we have (on first iteration, the starting value for each point in the co-ordinate space defined). If you're familiar with solving eigenvalue equations, the concept is the same. 
+Here, your band matrix is represented by A, and x and b represent two arrays of values. The variables x and b represent the next set of values to be obtained (what we're solving for) and the current set of values we have (on first iteration, the starting value for each point in the co-ordinate space defined). If you're familiar with solving eigenvalue equations, the concept is the same. Using the LAPACKE package, we can invert matrices easily, and can hence use the package to solve the eigenvalue equation. 
+
+
 
 
 
